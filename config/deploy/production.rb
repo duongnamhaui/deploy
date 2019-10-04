@@ -2,7 +2,7 @@ set :stage, :production
 set :rails_env, :production
 set :deploy_to, "/deploy/apps/deploy"
 set :branch, :master
-server 52.221.216.90, user: namdh, roles: %w(web app db)
+server "52.221.216.90", user: "namdh", roles: %w(web app db)
 
 # server-based syntax
 # ======================

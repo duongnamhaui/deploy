@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.5.0"
+lock '~> 3.9'
 
 set :application, "deploy"
 set :repo_url, "git@github.com:duongnamhaui/deploy.git"
