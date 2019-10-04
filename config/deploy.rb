@@ -9,6 +9,7 @@ set :linked_dirs, %w(log tmp/pids tmp/cache tmp/sockets vendor/bundle public/sys
 set :keep_releases, 5
 set :rvm_type, :user
 
+set :rvm1_map_bins, %w{rake gem bundle ruby}
 set :puma_rackup, -> {File.join(current_path, "config.ru")}
 set :puma_state, -> {"#{shared_path}/tmp/pids/puma.state"}
 set :puma_pid, -> {"#{shared_path}/tmp/pids/puma.pid"}
